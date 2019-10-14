@@ -1,6 +1,6 @@
 const express = require('express');
 const mongoose = require('mongoose');
-
+    
 const routes = require('./routes');
 
 const app = express();
@@ -21,4 +21,5 @@ mongoose.connect('mongodb://admin:admin@cluster0-shard-00-00-rnvem.mongodb.net:2
 app.use(express.json());
 app.use(routes);
 
-app.listen(3333);
+app.listen(9000);
+// app.listen(3333);
